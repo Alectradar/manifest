@@ -9,16 +9,16 @@
            fetch="https://github.com/Haxynox"
            revision="Mmm" />		
 
-   <remove-project path="hardware/broadcom/libbt" name="hardware_broadcom_libbt" remote="aospb" />
+   <remove-project path="hardware/broadcom/libbt" name="android_hardware_broadcom_libbt" remote="du" revision="m" />
    <project path="hardware/broadcom/libbt" name="hardware_broadcom_libbt" remote="Hax" />
 
-   <remove-project path="hardware/broadcom/wlan" name="hardware_broadcom_wlan" remote="aospb" />
+   <remove-project path="hardware/broadcom/wlan" name="android_hardware_broadcom_wlan" remote="du" revision="m" />
    <project path="hardware/broadcom/wlan" name="hardware_broadcom_wlan" remote="Hax" />
 
-   <remove-project path="frameworks/native" name="android_frameworks_native" />
+   <remove-project path="frameworks/native" name="android_frameworks_native" remote="du" revision="m-caf" />
    <project path="frameworks/native" name="Alectradar/android_frameworks_native" revision="du-m-caf" />
 
-   <remove-project path="frameworks/av" name="android_frameworks_av" />
+   <remove-project path="frameworks/av" name="android_frameworks_av" remote="du" revision="m-caf" />
    <project path="frameworks/av" name="Alectradar/android_frameworks_av" revision="du-m-caf" />
 
    <project path="external/stlport" name="android_external_stlport" remote="Hax" />
