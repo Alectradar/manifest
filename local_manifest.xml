@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="Alectradar"
+           fetch="https://github.com/Alectradar"
+           revision="mm6.0" />
+
+  <remote  name="Hax"
+           fetch="https://github.com/Haxynox"
+           revision="Mmm" />		
+
+   <remove-project path="hardware/broadcom/libbt" name="android_hardware_broadcom_libbt" remote="du" revision="m" />
+   <project path="hardware/broadcom/libbt" name="hardware_broadcom_libbt" remote="Hax" />
+
+   <remove-project path="hardware/broadcom/wlan" name="android_hardware_broadcom_wlan" remote="du" revision="m" />
+   <project path="hardware/broadcom/wlan" name="hardware_broadcom_wlan" remote="Hax" />
+
+   <remove-project path="frameworks/native" name="android_frameworks_native" remote="du" revision="m-caf" />
+   <project path="frameworks/native" name="Alectradar/android_frameworks_native" revision="du-m" />
+
+   <remove-project path="frameworks/av" name="android_frameworks_av" remote="du" revision="m-caf" />
+   <project path="frameworks/av" name="Alectradar/android_frameworks_av" revision="du-m" />
+
+   <project path="external/stlport" name="android_external_stlport" remote="Hax" />
+
+   <project path="hardware/samsung" name="android_hardware_samsung" remote="Alectradar" />
+</manifest>
