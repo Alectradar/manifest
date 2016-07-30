@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote revision="refs/heads/pa6.0"
+           name="Alectradar"
+           fetch="https://github.com/Alectradar" />
+
+  <remote revision="refs/heads/cm-13.0"
+           name="CM"
+           fetch="https://github.com/CyanogenMod" />
+
+  <remove-project path="prebuilts/ndk" name="platform/prebuilts/ndk" groups="pdk" />
+  <project path="prebuilts/ndk" name="platform/prebuilts/ndk" groups="pdk" clone-depth="1" />
+
+  <remove-project path="external/chromium-webview" name="platform/external/chromium-webview" groups="pdk" />
+  <project path="external/chromium-webview" name="platform/external/chromium-webview" groups="pdk" clone-depth="1" />
+
+  <remove-project path="frameworks/av" name="android_frameworks_av" remote="Alectradar" />
+
+  <remove-project path="frameworks/native" name="android_frameworks_native" remote="aospa" groups="pdk,aospa" />
+  <project path="frameworks/native" name="android_frameworks_native" remote="Alectradar" />
+
+  <remove-project path="vendor/pa" name="android_vendor_pa" remote="aospa" groups="aospa" >
+  <project path="vendor/pa" name="android_vendor_pa" remote="Alectradar" >
+
+</manifest>
